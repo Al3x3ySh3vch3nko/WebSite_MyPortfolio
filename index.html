@@ -18,13 +18,17 @@
     <title> ▷ [ Alexey Shevchenko Portfolio ]</title>
   </head>
   <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preloader-img"></div>
+    </div>
     <!-- Header -->
     <header id="header-inner">  
       <nav id="main-nav">
           <h1>
           <span class="txt-big text-center">
             <span class="red">▷ [ </span>
-            Alexey Shevchenko
+              Alexey Shevchenko
               <span class="hidden">
               <span class="red"> | </span> Portfolio
               </span> 
@@ -386,5 +390,11 @@
         <p class="px-1">[ Al3x3ySh3vch3nko ]: Copyright &copy; 2020-2022. All Rights Reserved</p>
       </div>
     </footer>
+    <script>
+      let spinner = document.querySelector('#preloader')
+      window.addEventListener('load', function(){
+        spinner.style.display = 'none'
+      })
+    </script>
   </body>
 </html>
