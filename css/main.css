@@ -41,12 +41,12 @@ body {
 
   .preloader-img
   {
-     /* position: fixed; */
-    background: url(/img/preloader.png) no-repeat center;
+    background: url(/img/preloader1.png) no-repeat center;
     width: 200px;
     height: 200px;
     background-size: 77%;
-    z-index: 4;
+    z-index: 7s;
+    border-color: #c20912;
   
     animation-name: rotation;
     animation-duration: 7s;
