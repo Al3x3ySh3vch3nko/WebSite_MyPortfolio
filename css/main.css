@@ -1,10 +1,13 @@
-@font-face {
+@font-face 
+{
   font-family: 'Rogan-Light';
   src: url("/fonts/Rogan-Light.woff") format("woff"), url("/fonts/Rogan-Light.woff2") format("woff2");
   font-weight: light;
-  font-style: normal; }
+  font-style: normal; 
+}
 
-:root {
+:root 
+{
   --dark-color: #030303;
   --light-color: #fff;
   --color-1: #c20912;
@@ -12,47 +15,61 @@
   --color-3: rgb(113,114,116);
 }
 
-* {
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 20px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--dark-color);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-2) ;
+}
+
+* 
+{
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
 }
 
-body {
+body 
+{
   font-family: 'Rogan-Light', sans-serif;
   line-height: 1.6;
   background-color: var(--color-3);
-  color: var(--dark-color); }
+  color: var(--dark-color); 
+}
 
-  #preloader
- {
-    background-color: var(--dark-color);
-    height: 100vh;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: fixed;
-    z-index: 3;
+#preloader
+{
+  background-color: var(--dark-color);
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 3;
 
-    display: grid;
-    justify-content: center;
-    align-items: center;
- }
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 
-  .preloader-img
-  {
-    background: url(/img/preloader1.png) no-repeat center;
-    width: 200px;
-    height: 200px;
-    background-size: 77%;
-    z-index: 7s;
-    border-color: #c20912;
+.preloader-img
+{
+  background: url(/img/preloader1.png) no-repeat center;
+  width: 200px;
+  height: 200px;
+  background-size: 77%;
+  z-index: 7s;
+  border-color: #c20912;
   
-    animation-name: rotation;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
+  animation-name: rotation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
    
   @keyframes rotation {
     0% {
@@ -63,11 +80,12 @@ body {
     }
   }
 
-  header{
-    display: flex;
-    justify-content: center;
-    background-color: var(--dark-color);
-    padding: 2vh 2rem;
+header
+{
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-color);
+  padding: 2vh 2rem;
 }
 
 a {
@@ -145,6 +163,10 @@ img {
   background-color: var(--dark-color);
 }
 
+.lazy-img
+{
+  filter: blur(20px);
+}
 
 .section-title {
   display: block;
