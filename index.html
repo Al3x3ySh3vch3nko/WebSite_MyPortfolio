@@ -392,17 +392,11 @@
     </footer>
     <script>
       let spinner = document.querySelector('#preloader')
-
-      console.log(spinner);
-
-      // window.setTimeout(spinnerStyle, 4000)
       spinnerStarter = function()
       {
         spinner.style.display = 'none'
       }
-     
       window.addEventListener('load', window.setTimeout(spinnerStarter, 4000))
-      console.log(spinnerStarter);
     </script>
   </body>
 </html>
